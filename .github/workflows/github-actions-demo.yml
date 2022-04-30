@@ -19,5 +19,7 @@ jobs:
       - uses: actions/setup-node@v1
       - uses: actions/checkout@v3
       - run: npm install
+      - run: npm install eslint --save-dev
+      - run: npx eslint --init
       - run: make lint
       - run: npm run test
