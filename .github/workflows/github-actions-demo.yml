@@ -4,5 +4,4 @@ jobs:
   Say-Hello:
     runs-on: ubuntu-latest
     steps:
-      - run make say-hello
-      
+      - run: make say-hello
