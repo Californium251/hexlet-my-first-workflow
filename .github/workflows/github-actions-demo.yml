@@ -7,4 +7,6 @@ jobs:
       # Check-out repository under GitHub workspace
       # https://github.com/actions/checkout
       - uses: actions/checkout@v3
+      - run: npm install
       - run: make lint
+      
